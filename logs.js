@@ -75,8 +75,8 @@ config.configFile(process.argv[2], function (config, oldConfig) {
           return;
       }
 
-      var payload = fragments[0].trim();
-      var severity = fragments[1].trim(); 
+      var payload = fragments[1].trim();
+      var severity = fragments[0].trim(); 
       entries[uuid.v1()] = { severity: severity, payload: payload};
     });
     server.bind(config.port || 8127, config.address || undefined);
