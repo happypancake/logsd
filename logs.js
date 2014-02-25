@@ -2,8 +2,8 @@
 
 var dgram  = require('dgram')
   , util    = require('util')
-  , config = require('./lib/config')
   , helpers = require('./lib/helpers')
+  , config = require('./lib/config')  
   , events = require('events')
   , logger = require('./lib/logger')
   , process_mgmt = require('./lib/process_mgmt')
